@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React Weather Extension",
   "scripts": {
-    "start": "webpack --watch --progress --config webpack.dev.js",
+    "start": "webpack --watch --progress --hot --config webpack.dev.js",
     "build": "webpack --watch --progress --config webpack.prod.js"
   },
   "author": "",

@@ -21,7 +21,7 @@ export interface OpenWeatherData {
 }
 
 export async function fetchOpenWeatherData(city: string): Promise<OpenWeatherData> {
-	const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API}`)
+	const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&&appid=${API}`)
 	if(!res.ok) throw new Error('City not found')
 	const data: OpenWeatherData = await res.json();
 	return data;
